@@ -127,6 +127,41 @@ body .page_header .header_content {
       height: 39px; }
     body .page_header .header_content .sidebar_content .sidebar .nav .nav-item:last-of-type .nav-link {
       margin-bottom: 50px; }
+body .section_more .container {
+  background: #ebebeb;
+  border-bottom: 3px solid  #e0e0e0; }
+body .section_more .image {
+  height: 75px;
+  background: url(image/recommended.png) no-repeat;
+  background-size: cover; }
+  body .section_more .image:hover {
+    opacity: 0.7; }
+  body .section_more .image .triangle {
+    display: inline-block !important;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #085493;
+    border-top: 20px solid transparent; }
+  body .section_more .image .fas {
+    position: relative;
+    right: -18px;
+    top: 2px;
+    font-size: 8px;
+    color: #fff; }
+body .section_more .show_more,
+body .section_more .signature {
+  color: #858585;
+  font-family: "Arial MT";
+  font-size: 11px; }
+body .section_more .section_more_header {
+  border-bottom: 1px dotted #d2d2d2; }
+  body .section_more .section_more_header h5 {
+    font-family: "Corpid Bold";
+    font-size: 12px;
+    color: #0c6aa7; }
+body .section_more .section_recommended {
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 @media screen and (max-width: 991px) {
   .page_header {
@@ -158,6 +193,9 @@ body .page_header .header_content {
     padding-bottom: 5px; }
     .main_navbar .navbar .nav-link.active, .main_navbar .navbar .nav-link:hover {
       transform: translateY(0px) !important; }
+
+  .page_header {
+    margin-bottom: 180px; }
 
   .sidebar_content {
     margin-top: -220px !important; }
