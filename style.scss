@@ -18,7 +18,9 @@
     src: url(fonts/Corpid-Bold-Italic.otf);
 }
 
+
 body {
+
     .padding_right {
         padding-right: 60px;
     }
@@ -26,6 +28,23 @@ body {
         width: 1px;
         background: #d8d8d8;
         display: inline-block;
+    }
+    .section_header {
+        border-bottom: 1px dotted #d2d2d2;
+        h5 {
+            font-family: "Corpid Bold";
+            font-size: 12px;
+            color: #0c6aa7;
+
+        }
+    }
+    .show_more,
+    .signature {
+        color: #858585;
+        font-family: "Arial MT";
+        font-size: 11px;
+
+
     }
 
     .top_navbar {
@@ -64,6 +83,7 @@ body {
     }
     .main_navbar {
         margin-top: -43px;
+
         .navbar {
             height: 100%;
             width: 100%;
@@ -83,12 +103,13 @@ body {
                 border: 0;
             }
             .nav-item {
-                min-width: 20%;
+                min-width: 25%;
                 font-size: 12px;
                 .nav-link {
                     width: 100%;
                     color: #0c6aa7;
                     position: relative;
+                    transition: all 0.2s linear;
                     &.active,
                     &:hover {
                         z-index: 2;
@@ -132,18 +153,14 @@ body {
             .sidebar_content {
 
                 .sidebar {
-                    -webkit-box-shadow: -25px 7px 0px -7px rgba(12, 106, 167, 0.59);
-                    -moz-box-shadow: -25px 7px 0px -7px rgba(12, 106, 167, 0.59);
-                    filter: drop-shadow(-14px 5px -7px rgba(12, 106, 167, 0.59));
-                    filter: drop-shadow( 6px 6px 6px rgb(109, 107, 107));
-                    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 92%, 89% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 100% 0, 100% 92%, 89% 100%, 0% 100%);
+                    -webkit-box-shadow: -10px 5px 0px -5px rgba(12, 106, 167, 0.59);
+                    -moz-box-shadow: -10px 5px 0px -5px rgba(12, 106, 167, 0.59);
+                    box-shadow: -10px 5px 0px -5px rgba(12, 106, 167, 0.59);
                     height: 376x;
                     max-width: 280px;
                     width: 100%;
                     margin-top: -42px;
                     background-color: #0c6aa7;
-
 
                     .nav {
                         .nav-item {
@@ -160,17 +177,22 @@ body {
                                 font-size: 12px;
                                 border-bottom: 1px solid #0e77b8;
                                 height: 29px;
-                                &:hover,
-                                &.active {
-                                    background: #0e77b8;
-                                }
+                                transition: all 0.2s linear;
                                 .search_input {
                                     height: 22px;
                                     border: 1px solid #5baddf;
                                     background: #dcdcdc;
                                 }
 
+                                &:hover,
+                                &.active {
+                                    background: #0e77b8;
+
+
+                                }
+
                             }
+
                             .text_bold {
                                 font-family: "ArialBold MT";
                             }
@@ -194,17 +216,19 @@ body {
         }
 
     }
+
     .section_more {
         .container {
             background: #ebebeb;
-            border-bottom: 3px solid  #e0e0e0;
+            border-bottom: 3px solid #e0e0e0;
 
         }
         .image {
             height: 75px;
             background: url(image/recommended.png) no-repeat;
             background-size: cover;
-            &:hover{
+
+            &:hover {
                 opacity: 0.7;
             }
             .triangle {
@@ -217,33 +241,96 @@ body {
             .fas {
                 position: relative;
                 right: -18px;
-                top: 2px;
+                top: -2px;
                 font-size: 8px;
                 color: #fff;
             }
         }
 
-        .show_more,
-        .signature {
-            color: #858585;
-            font-family: "Arial MT";
-            font-size: 11px;
-        }
-        .section_more_header {
-            border-bottom: 1px dotted #d2d2d2;
-            h5 {
-                font-family: "Corpid Bold";
-                font-size: 12px;
-                color: #0c6aa7;
 
-            }
-        }
         .section_recommended {
             padding-top: 15px;
             padding-bottom: 15px;
 
         }
     }
+    .main_section {
+
+        font-family: "Arial MT";
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background: #ebebeb;
+            border-bottom: 3px solid #e0e0e0;
+
+        }
+    }
+    .section_tags,
+    .section_new_user {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .tags_list {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            line-height: 29px;
+            color: #858585;
+            a {
+                color: #858585;
+                text-decoration: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                &:hover {
+                    color: #0c6aa7;
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+
+    }
+
+    .section_tags {
+        .tags_list {
+            border-bottom: 1px dotted #d2d2d2;
+        }
+    }
+
+    .section_new_user {
+        background: #f2f2f2;
+        .tags_list {
+            line-height: 22px;
+        }
+    }
+
+    .page_footer {
+        padding: 28px;
+        .copyright_info {
+            p {
+                color: #858585;
+                font-family: "Arial MT";
+                font-size: 12px;
+                a {
+                    color: #0c6aa7;
+                    font-family: "ArialBold MT";
+                }
+            }
+        }
+        .footer_nav {
+
+            font-family: "Arial MT";
+            font-size: 12px;
+            .nav-link {
+                padding: 0 5px;
+                color: #858585;
+                &:hover {
+                    color: #0c6aa7;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width:991px) {
@@ -312,7 +399,7 @@ body {
         }
     }
     .page_header {
-        margin-bottom:180px ;
+        margin-bottom: 180px;
 
     }
     .sidebar_content {
